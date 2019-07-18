@@ -1,0 +1,35 @@
+#!/bin/sh
+
+# source for soure tree
+if [ -e "$HOME/.zshrc" ]; then
+  source ~/.zshrc
+fi
+
+# Check for existence of astyle, and error out if not present.
+if [ ! -e "/usr/local/bin/astyle" ]; then
+	echo "git pre-commit hook:"
+	echo "Did not find astyle, please install it before continuing."
+	exit 1
+fi
+
+FILE_PATTERN=".*(\.cs)$"
+
+echo "--- checking astyle ---"
+for file in `git diff-index --cached --name-only HEAD |  egrep $FILE_PATTERN`; do
+    format=true
+    while read line
+    do
+        if [[ $file == *"$line"* ]]; then
+            format=false
+            break
+        fi
+    done < "$(pwd -P)/astyle-ignore"
+    if $format; then
+        /usr/local/bin/astyle --options="$(pwd -P)/astyle.config" $file
+        git add $file
+    else
+        echo "Skipping format for: $file"
+    fi
+done
+
+echo "--- checking astyle done ---"

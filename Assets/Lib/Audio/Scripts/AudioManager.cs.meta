@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 537e2a4fd18439646ab268fe8e09c539
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _mixer: {fileID: 24100000, guid: 3409ea3e0368d604e829f81358e55ea2, type: 2}
+  - _2dAudioDataPrefab: {fileID: 114432658464404522, guid: 408e45ac54a5a7f489554366c6464f88,
+      type: 2}
+  - _3dAudioDataPrefab: {fileID: 114408560629661044, guid: 33d7c65d7708cea4695ffb1ec4f415b2,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

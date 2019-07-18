@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 892a9716f06c189438b072ddf4ab5058
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Ricty Diminished
+  fontNames:
+  - Ricty Diminished
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 074ad2a8208672144982563a0c18fbff, type: 3}
+  - {fileID: 12800000, guid: 81e1e52ae323e3445abb78ffcd318956, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
